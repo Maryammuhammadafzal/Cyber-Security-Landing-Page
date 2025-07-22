@@ -15,6 +15,7 @@ import { Toggle } from "./ui/toggle";
 import { AlignCenter, X } from "lucide-react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Vector from "./Vector";
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +42,10 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="w-full h-auto flex justify-center items-center">
+        <header className="w-full h-auto flex justify-center relative items-center">
+             <div className='w-[365px] h-[365px] blur-[200px] -left-50 -top-50  -z-10 absolute '>
+                        <Vector/>
+                    </div>
             <div className="lg:w-[85%] md:w-[95%] w-[98%] py-8 md:py-12 flex justify-between items-center relative">
                 <Link href="/" className="">
                     <Image
