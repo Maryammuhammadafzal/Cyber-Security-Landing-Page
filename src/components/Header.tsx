@@ -42,7 +42,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="w-full h-auto flex justify-center relative items-center">
+        <header className="w-full h-auto flex justify-center px-5 relative items-center">
              <div className='w-[365px] h-[365px] blur-[200px] -left-50 -top-50  -z-10 absolute '>
                         <Vector/>
                     </div>
@@ -57,7 +57,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className="w-auto h-auto px-2">
-                    <ul className="w-auto sm:block hidden h-auto flex justify-center items-center gap-6">
+                    <ul className="w-auto md:flex hidden h-auto  justify-center items-center gap-6">
                         <li className="flex justify-center items-center p-1 w-fit">
                             <Link href={'/'} className="md:text-lg relative text-base group flex justify-center items-center">Home <div className="w-6 h-6 bg-accent group-hover:block hidden blur-xl absolute"></div></Link>
                             

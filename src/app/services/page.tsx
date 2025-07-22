@@ -4,7 +4,7 @@ import React from 'react'
 
 const ServicePage = () => {
     return (
-        <div className="about mb-0 w-full h-auto flex justify-center relative items-center py-30">
+        <div className="about mb-0 w-full h-auto flex justify-center relative items-center  xl:py-30 lg:py-24 md:py-18 sm:py-12 xs:py-7 py-5">
            <div className='w-[365px] h-[365px] blur-[200px] -right-60 -bottom-40  -z-10 absolute '>
                         <Vector/>
                     </div>
@@ -16,7 +16,7 @@ const ServicePage = () => {
 
                 </div>
                 <div className='w-full h-auto flex flex-col gap-3 justify-center items-center'>
-                    <div className='grid md:grid-cols-3 grid-cols-2 gap-3 w-full h-auto'>
+                    <div className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
                         <div className='w-full md:col-span-2 col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
@@ -52,7 +52,7 @@ const ServicePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='grid md:grid-cols-3 grid-cols-2 gap-3 w-full h-auto'>
+                    <div className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
                         <div className='w-full col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
@@ -87,7 +87,7 @@ const ServicePage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full md:col-span-1 col-span-2 h-[366px]'>
+                        <div className='w-full md:col-span-1 xs:col-span-2 col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon5.png'
