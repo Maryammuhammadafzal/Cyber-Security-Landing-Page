@@ -10,11 +10,14 @@ const ResultPage = () => {
                 </h2>
             </div>
             <div className="w-full p-2  h-auto flex md:flex-row flex-col justify-center items-center md:gap-3 gap-6">
-                <div className="left max-w-[420px] max-h-[400px] relative md:w-[50%] flex justify-center items-center w-full h-auto mx-auto order-2">
+                <div className="left max-w-[420px] max-h-[400px] relative md:w-[50%] w-full h-auto mx-auto order-2">
 
                    <hr className='border w-full border-accent/50' />
                    <hr className='border w-[97%] rotate-90 border-accent/50' />
-                   <div className='w-1 h-1 bg-accent rounded-full absolute '></div>
+                   <div className='w-1 h-1 bg-accent rounded-full absolute right-0 -top-[2px]'></div>
+                   <div className='w-1 h-1 bg-accent rounded-full absolute right-[51%] -top-51'></div>
+
+                   <div className=''></div>
                 </div>
                 <div className=" md:w-[50%] w-full h-auto flex justify-start items-start order-1">
                     <Image
