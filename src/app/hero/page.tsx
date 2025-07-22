@@ -8,7 +8,7 @@ const HeroPage = () => {
         <div className="home mb-0 w-full h-auto flex justify-center  items-center py-30">
             <div className="w-full p-2 sm:w-[90%] lg:w-[85%]  h-auto flex md:flex-row flex-col justify-center items-center md:gap-3 gap-6">
                 <div className="left md:w-[50%] w-full h-auto space-y-5">
-                    <h1 className="font-semibold 2xl:text-7xl gradient-title 2xl:leading-20 xl:text-6xl lg:text-5xl md:text-5xl min-[768px]:text-4xl text-6xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
+                    <h1 className="font-semibold 2xl:text-[84px] gradient-title 2xl:leading-20 xl:text-7xl lg:text-6xl md:text-6xl min-[768px]:text-5xl text-5xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
                         Securing Your
                         Digital World
                     </h1>
