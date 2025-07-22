@@ -57,7 +57,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className="w-auto h-auto px-2">
-                    <ul className="w-auto h-auto flex justify-center items-center gap-6">
+                    <ul className="w-auto sm:block hidden h-auto flex justify-center items-center gap-6">
                         <li className="flex justify-center items-center p-1 w-fit">
                             <Link href={'/'} className="md:text-lg relative text-base group flex justify-center items-center">Home <div className="w-6 h-6 bg-accent group-hover:block hidden blur-xl absolute"></div></Link>
                             
