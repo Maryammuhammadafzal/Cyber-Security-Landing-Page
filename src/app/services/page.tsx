@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ServicePage = () => {
@@ -12,7 +13,23 @@ const ServicePage = () => {
                 </div>
                 <div className='w-full h-auto flex flex-col gap-5 justify-center items-center'>
                     <div className='grid grid-cols-3 gap-5 w-full h-auto'>
-                        <div className='w-full col-span-2 h-[366px]'></div>
+                        <div className='w-full col-span-2 h-[366px]'>
+                            <div className='w-full h-full border border-accent rounded-3xl pt-5 px-3.5 flex flex-col gap-4'>
+                                <Image
+                                    src='/images/about-image.jpg'
+                                    width={535}
+                                    height={340}
+                                    alt="image"
+                                    className=' rounded-3xl'
+                                />
+                                <h3 className='font-mono font-bold lg:text-[40px] sm:text-4xl text-3xl'>
+                                    Managed Security Services
+                                </h3>
+                                <p className='text-lg max-w-lg'>
+                                    Round-the-clock monitoring, threat detection, and response — keeping your business safe 24/7.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
