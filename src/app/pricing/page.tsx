@@ -1,10 +1,33 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import { IoIosCheckmarkCircle } from "react-icons/io";
-import { Button } from "@/components/ui/button";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const PricingPage = () => {
+    const [isMobile , setIsMobile] = useState(false);
+     useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: true,
+        });
+    });
+
+    useEffect(() => {
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkMobile(); 
+  window.addEventListener("resize", checkMobile); 
+
+  return () => {
+    window.removeEventListener("resize", checkMobile);
+  };
+}, []);
+console.log(isMobile);
+ useEffect(() => {
+    Aos.refresh(); 
+  }, [isMobile]);
     return (
         <div className="w-full h-auto flex justify-center  items-center">
             <div className="about mb-0 sm:p-0 px-4 gap-8 sm:w-[90%] md:w-[99%] lg:w-[90%] w-full mx-auto flex-col h-auto flex justify-center  items-center  md:py-20 sm:py-14 xs:py-9 py-5">
@@ -15,7 +38,7 @@ const PricingPage = () => {
                 </div>
 
                 <div className="w-full flex md:flex-row flex-col justify-center items-center lg:gap-100 md:gap-75 gap-15 md:py-20  h-auto relative">
-                    <div className="1 w-[375px] h-[572px] max-sm:w-full rounded-[20px] bg-white  border border-accent/50 flex flex-col relative items-center justify-between">
+                    <div data-aos={isMobile ? 'fade-up' : 'fade-right'} className="1 w-[375px] h-[572px] max-sm:w-full rounded-[20px] bg-white  border border-accent/50 flex flex-col relative items-center justify-between">
                         <div className="w-full h-auto flex flex-col gap-6 justify-center items-center">
                             <div className="bg-gradient-to-l from-[#EF99FF] to-[#B911D4] w-full h-[50px] flex justify-center items-center rounded-tr-[20px] rounded-tl-[20px]  sm:text-lg text-base text-white font-mono font-bold">Starting at: $499/month</div>
                             <div className="w-full h-auto flex flex-col gap-3 py-10  px-2 justify-center items-center ">
@@ -41,7 +64,7 @@ const PricingPage = () => {
 
                         <div className="bg-gradient-to-l from-[#EF99FF] to-[#B911D4] w-full h-[50px] flex justify-center items-center rounded-br-[20px] rounded-bl-[20px]  text-lg text-white font-mono font-bold">👉 Get Started</div>
                     </div>
-                    <div className="2 lg:w-[407px] md:w-[320px] w-[375px]  max-sm:w-full top-10 md:absolute bg-white  border border-accent/50 drop-shadow-xl drop-shadow-accent z-20 h-[630px] rounded-[20px] flex flex-col  items-center justify-between">
+                    <div  data-aos={'fade-up'} className="2 lg:w-[407px] md:w-[320px] w-[375px]  max-sm:w-full top-10 md:absolute bg-white  border border-accent/50 drop-shadow-xl drop-shadow-accent z-20 h-[630px] rounded-[20px] flex flex-col  items-center justify-between">
                         <div className="w-full h-full flex flex-col gap-6 ">
                             <div className="bg-gradient-to-l from-[#EF99FF] to-[#B911D4] w-full h-[50px] flex justify-center items-center rounded-tr-[20px] rounded-tl-[20px]  sm:text-lg text-base text-white font-mono font-bold">Custom Pricing Contact for Quote</div>
                             <div className="w-full h-auto flex flex-col gap-3 px-2 justify-center text-center items-center py-10 ">
@@ -70,7 +93,7 @@ const PricingPage = () => {
 
                         <div className="bg-gradient-to-l from-[#EF99FF] to-[#B911D4] w-full h-[50px] flex justify-center items-center rounded-br-[20px] rounded-bl-[20px]  text-lg text-white font-mono font-bold">👉 Request a Consultation</div>
                     </div>
-                    <div className="3 w-[375px] h-[572px] max-sm:w-full rounded-4xl  border border-accent/50 bg-white  flex flex-col relative items-center justify-between">
+                    <div  data-aos={isMobile ? 'fade-up' : 'fade-left'} className="3 w-[375px] h-[572px] max-sm:w-full rounded-4xl  border border-accent/50 bg-white  flex flex-col relative items-center justify-between">
                         <div className="w-full h-auto flex flex-col gap-6">
                             <div className="bg-gradient-to-l from-[#EF99FF] to-[#B911D4] w-full h-[50px] flex justify-center items-center rounded-tr-[20px] rounded-tl-[20px]  sm:text-lg text-base text-white font-mono font-bold">Starting at: $1,499/month</div>
                             <div className="w-full h-auto flex flex-col gap-3 px-2 justify-center items-center text-center py-10 ">
