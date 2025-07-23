@@ -10,7 +10,7 @@ const ResultPage = () => {
                 </h2>
             </div>
             <div className="w-full p-2  h-auto flex md:flex-row flex-col justify-center items-center md:gap-3 sm:gap-50 xs:gap-36 gap-24">
-                <div  data-aos={ 'fade-left'} className="left sm:max-w-[500px] xs:max-w-[380px] max-w-[280px] sm:max-h-[400px] xs:max-h-[320px] max-h-[250px] relative md:w-[50%] w-full h-auto mx-auto order-2">
+                <div  data-aos={'fade-left'} className="left sm:max-w-[500px] xs:max-w-[380px] max-w-[280px] sm:max-h-[400px] xs:max-h-[320px] max-h-[250px] relative md:w-[50%] w-full h-auto mx-auto order-2">
 
                     <hr className='border w-full border-accent/50' />
                     <hr className='border w-[98%] rotate-90 border-accent/50' />

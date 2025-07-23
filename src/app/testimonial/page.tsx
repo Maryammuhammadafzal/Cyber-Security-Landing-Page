@@ -29,7 +29,7 @@ const TestimonialPage = () => {
             </div>
             <div className="w-full p-2 h-auto grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 sm:gap-5 xs:gap-3 gap-8 justify-center items-center">
                 {testimonial_data.map((testimonial, index) => (
-                    <div key={index} className={`${index > 2 ? 'lg:hidden' : 'block'} flex justify-center px-5 relative rounded-[20px] border border-accent/70 text-center w-full h-auto min-h-[235px] items-center flex-col gap-3`}>
+                    <div  data-aos={'fade-up'} key={index} className={`${index > 2 ? 'lg:hidden' : 'block'} flex justify-center px-5 relative rounded-[20px] border border-accent/70 text-center w-full h-auto min-h-[235px] items-center flex-col gap-3`}>
                         <div className='w-[70px] h-[70px] absolute -top-8 left-4 flex justify-center items-center'>
                             <Image src='/images/quote.png' alt='quote-icon' width={70} height={70} />
                         </div>
