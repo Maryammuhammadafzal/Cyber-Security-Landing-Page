@@ -4,6 +4,7 @@ import AboutPage from "./about/page";
 import ServicePage from "./services/page";
 import ResultPage from "./result/page";
 import ProcessPage from "./process/page";
+import TestimonialPage from "./testimonial/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
      <ServicePage/> 
      <ResultPage/> 
      <ProcessPage/> 
+     <TestimonialPage/> 
     </div>
   );
 }
