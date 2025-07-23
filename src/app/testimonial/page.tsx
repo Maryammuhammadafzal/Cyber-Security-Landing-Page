@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const TestimonialPage = () => {
@@ -22,9 +23,16 @@ const TestimonialPage = () => {
                     Testimonials
                 </h2>
             </div>
-            <div className="w-full p-2 h-auto flex justify-center items-center">
-                {testimonial_data.map((testimonial , index)=> (
-                    <div></div>
+            <div className="w-full p-2 h-auto grid grid-cols-3 justify-center items-center">
+                {testimonial_data.map((testimonial, index) => (
+                    <div key={index} className='flex justify-center relative rounded-[20px] border border-accent/70 text-center w-full h-auto min-h-[235px] items-center flex-col gap-3'>
+                        <div className='w-[70px] h-[70px] absolute -top-20 left-4 flex justify-center items-center'>
+                            <Image src='/images/quote.png' alt='quote-icon' width={70} height={70} />
+                        </div>
+                        <div className='h-10 w-10 rounded-full bg-accent-foreground'></div>
+                        <h4 className='font-mono lg:text-2xl text-xl font-bold'>{testimonial.title}</h4>
+                        <p className='font-sans lg:text-base text-sm'>{testimonial.description}</p>
+                    </div>
                 ))
 
                 }
