@@ -10,14 +10,33 @@ const ResultPage = () => {
                 </h2>
             </div>
             <div className="w-full p-2  h-auto flex md:flex-row flex-col justify-center items-center md:gap-3 gap-6">
-                <div className="left max-w-[420px] max-h-[400px] relative md:w-[50%] w-full h-auto mx-auto order-2">
+                <div className="left max-w-[500px] max-h-[400px] relative md:w-[50%] w-full h-auto mx-auto order-2">
 
-                   <hr className='border w-full border-accent/50' />
-                   <hr className='border w-[97%] rotate-90 border-accent/50' />
-                   <div className='w-1 h-1 bg-accent rounded-full absolute right-0 -top-[2px]'></div>
-                   <div className='w-1 h-1 bg-accent rounded-full absolute right-[51%] -top-51'></div>
+                    <hr className='border w-full border-accent/50' />
+                    <hr className='border w-[98%] rotate-90 border-accent/50' />
+                    <div className='w-1 h-1 bg-accent rounded-full absolute right-0 -top-[2px]'></div>
+                    <div className='w-1 h-1 bg-accent rounded-full absolute right-[50.6%] -top-61 max-[1200px]:-top-51'></div>
 
-                   <div className=''></div>
+                    <div className='w-full h-[200px] absolute bottom-0 justify-center items-end flex gap-10 '>
+                        <div className='w-auto  h-auto max-h-[150px] mr-6 mb-8 flex flex-col gap-2 text-center'>
+                            <h4 className='text-4xl font-bold font-mono'>99.99%</h4>
+                            <p className=''> incident mitigation rate</p>
+                        </div>
+                        <div className='w-auto  h-auto max-h-[150px] mr-6 mb-8 flex flex-col gap-2 text-center'>
+                            <h4 className='text-4xl font-bold font-mono'> 24/7/365</h4>
+                            <p className=''>security monitoring</p>
+                        </div>
+                    </div>
+                    <div className='w-full h-[200px] absolute top-0 justify-center items-start flex gap-10 '>
+                        <div className='w-auto  h-auto max-h-[150px] mr-6 mt-8 flex flex-col gap-2 text-center'>
+                            <h4 className='text-4xl font-bold font-mono'>15+ years</h4>
+                            <p className=''> of industry experience</p>
+                        </div>
+                        <div className='w-auto  h-auto max-h-[150px] mr-6 mt-8 flex flex-col gap-2 text-center'>
+                            <h4 className='text-4xl font-bold font-mono'>100+ cities</h4>
+                            <p className=''>Clients In different cities</p>
+                        </div>
+                    </div>
                 </div>
                 <div className=" md:w-[50%] w-full h-auto flex justify-start items-start order-1">
                     <Image
