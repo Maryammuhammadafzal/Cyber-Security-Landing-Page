@@ -11,27 +11,27 @@ const Footer = () => {
             name: 'Home',
         },
         {
-            link: '/',
+            link: '/about',
             name: 'About Us',
         },
         {
-            link: '/',
+            link: '/services',
             name: 'Services',
         },
         {
-            link: '/',
+            link: '/process',
             name: 'Process',
         },
         {
-            link: '/',
+            link: '/testimonial',
             name: 'Testimonials',
         },
         {
-            link: '/',
+            link: '/pricing',
             name: 'Pricing Plans',
         },
         {
-            link: '/',
+            link: '/contact',
             name: 'Contact Us',
         },
 
