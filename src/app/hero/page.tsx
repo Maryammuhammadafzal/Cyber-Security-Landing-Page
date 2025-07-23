@@ -1,13 +1,32 @@
+'use client'
 import { Button } from '@/components/ui/button'
 import Vector from '@/components/Vector'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HeroPage = () => {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile); 
+
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+        };
+    }, []);
+    useEffect(() => {
+        Aos.refresh();
+    }, [isMobile]);
     return (
         <div className="home mb-0 w-full h-auto flex justify-center  items-center xl:py-30 lg:py-24 md:py-18 sm:py-12 xs:py-7 py-5">
             <div className="w-full p-2 sm:w-[90%] lg:w-[85%]  h-auto flex md:flex-row flex-col justify-center items-center md:gap-6">
-                <div className="left md:w-[50%] w-full h-auto space-y-5 max-w-lg">
+                <div data-aos={isMobile ? 'fade-up' : 'fade-right'} className="left md:w-[50%] w-full h-auto space-y-5 max-w-lg">
                     <h1 className="font-semibold 2xl:text-[72px] gradient-title 2xl:leading-20 xl:text-7xl lg:text-6xl md:text-6xl min-[768px]:text-5xl text-5xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
                         Securing Your
                         Digital World
@@ -20,9 +39,9 @@ const HeroPage = () => {
                         Get a Free Assessment
                     </Button>
                 </div>
-                <div className="right md:w-[50%] w-full h-auto flex md:py-0 py-10 relative justify-center items-center">
+                <div data-aos={isMobile ? 'fade-up' : 'fade-left'} className="right md:w-[50%] w-full h-auto flex md:py-0 py-10 relative justify-center items-center">
                     <div className='w-[200px] h-[200px] blur-[100px]  -z-10 absolute '>
-                        <Vector/>
+                        <Vector />
                     </div>
                     <Image
                         src='/images/hero-image.png'

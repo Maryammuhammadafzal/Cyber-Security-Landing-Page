@@ -1,8 +1,33 @@
+'use client'
 import Vector from '@/components/Vector'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ServicePage = () => {
+const [isMobile , setIsMobile] = useState(false);
+ useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: true,
+        });
+    });
+useEffect(() => {
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkMobile(); 
+  window.addEventListener("resize", checkMobile); 
+
+  return () => {
+    window.removeEventListener("resize", checkMobile);
+  };
+}, []);
+ useEffect(() => {
+    Aos.refresh(); 
+  }, [isMobile]);
     return (
         <div className="about mb-0 w-full h-auto flex justify-center relative items-center  xl:py-30 lg:py-24 md:py-18 sm:py-12 xs:py-7 py-5">
            <div className='w-[365px] h-[365px] blur-[200px] -right-60 -bottom-40  -z-10 absolute '>
@@ -16,7 +41,7 @@ const ServicePage = () => {
 
                 </div>
                 <div className='w-full h-auto flex flex-col gap-3 justify-center items-center'>
-                    <div className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
+                    <div data-aos={isMobile ? 'fade-up' : 'fade-right'} className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
                         <div className='w-full md:col-span-2 col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
