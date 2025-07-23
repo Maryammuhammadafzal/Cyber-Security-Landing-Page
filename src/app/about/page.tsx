@@ -9,7 +9,7 @@ const AboutPage = () => {
                     <h2 className="font-semibold w-fit gradient-title xl:text-6xl lg:text-5xl md:text-5xl min-[768px]:text-4xl text-6xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
                         About Us
                     </h2>
-                    <p className="font-normal max-w-2xl font-sans lg:text-xl sm:text-lg text-base text-[16px] pr-8">
+                    <p className="font-normal max-w-2xl font-sans lg:text-xl md:text-lg sm:text-base xs:text-sm text-xs text- pr-8">
                         At [Your Company Name], we are passionate about defending businesses, governments, and individuals against cyber threats.<br /> Our team of certified experts brings decades of experience in protecting sensitive data, detecting vulnerabilities, and mitigating risks — before they impact you.<br/>
                         With a proactive approach and state-of-the-art technology, we empower organizations to operate confidently in the digital age.
                     </p>
