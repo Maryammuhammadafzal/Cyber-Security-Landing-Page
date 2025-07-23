@@ -20,7 +20,7 @@ const Footer = () => {
         },
     ];
     return (
-        <div className="w-full bg-secondary text-primary h-auto gap-5 flex justify-center items-center py-10 px-3">
+        <div className="w-full bg-secondary  h-auto gap-5 flex justify-center items-center py-10 px-3">
             <div className=" w-[80%] max-lg:w-[95%] max-md:w-full  h-auto flex flex-col gap-10 justify-center items-center">
                 <div className="footerContent max-sm:justify-center w-full h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-between mb-3 gap-6 ">
                     <div className="left w-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center p-3 h-auto">
@@ -40,9 +40,7 @@ const Footer = () => {
                     </div>
 
                     <div className="max-sm:w-full max-sm:py-3 w-full p-3 h-auto ">
-                        <h4 className="text-primary text-xl  capitalize font-semibold">
-                            Quick Links
-                        </h4>
+                        <h4 className='font-mono lg:text-2xl text-xl font-bold text-[#BA23D2] w-fit'>Quick Links</h4>
                         <ul className="list-none text-base py-2  gap-2 flex flex-col ">
                             <li className="  font-normal">
                                 <a href="#" className="">
@@ -78,7 +76,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="middle  max-sm:py-3 w-full p-3 h-auto">
-                        <h4 className="text-primary text-xl capitalize font-semibold">
+                        <h4 className=" text-xl capitalize font-semibold">
                             Our Programs
                         </h4>
                         <ul className="list-none py-2 gap-2 flex flex-col ">
@@ -94,7 +92,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="left max-sm:w-full max-sm:px-3 gap-10  max-sm:py-3 w-full p-3  h-auto max-[900px]:w-full">
-                        <h4 className="text-primary text-lg capitalize font-semibold ">
+                        <h4 className=" text-lg capitalize font-semibold ">
                             Contact Information
                         </h4>
                         <ul className="list-none py-2 gap-2 flex flex-col ">
