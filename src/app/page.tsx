@@ -6,6 +6,8 @@ import ResultPage from "./result/page";
 import ProcessPage from "./process/page";
 import TestimonialPage from "./testimonial/page";
 import QuickAction from "./quickAction/page";
+import PricingPage from "./pricing/page";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
      <ProcessPage/> 
      <TestimonialPage/> 
      <QuickAction/> 
+     <PricingPage/>  
+     <ContactPage/>  
     </div>
   );
 }
