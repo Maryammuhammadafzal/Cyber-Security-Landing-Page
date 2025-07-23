@@ -130,3 +130,10 @@
 @theme {
   --breakpoint-xs: 30rem;
 }
+
+.step {
+  -webkit-text-stroke-width : 1px;
+  -webkit-text-stroke-color : #BA23D2;
+  -webkit-text-fill-color : #fefaff;
+
+}
