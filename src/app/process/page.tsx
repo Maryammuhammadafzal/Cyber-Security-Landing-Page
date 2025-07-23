@@ -45,26 +45,30 @@ const ProcessPage = () => {
                                 <p className='font-sans text-base'>Deploy solutions and configure defenses..</p>
                             </div>
                         </div>
-                        <div className='w-[215px] relative h-auto rotate-90'>
+                        <div className='w-[215px] relative rotate-90'>
                             <hr className='border border-accent/50 w-[215px] ' />
                             <div className='w-1 h-1 rounded-full bg-accent absolute -top-[1px]'></div>
                         </div>
+
+                        {/* 4 */}
                         <div className='w-auto h-auto flex flex-col gap-5 max-w-[150px]'>
-                            <p className='step font-bold text-4xl'>01</p>
+                            <p className='step font-bold text-4xl'>04</p>
                             <div className='flex flex-col gap-1'>
-                                <h4 className='font-mono text-2xl font-bold text-[#BA23D2] w-fit'>Assess</h4>
-                                <p className='font-sans text-base'>Understand your business, goals, and risks.</p>
+                                <h4 className='font-mono text-2xl font-bold text-[#BA23D2] w-fit'>Monitor</h4>
+                                <p className='font-sans text-base'>Continuously monitor, detect, and respond to threats.</p>
                             </div>
                         </div>
                         <div className='w-[215px] relative h-auto rotate-90'>
                             <hr className='border border-accent/50 w-[215px] ' />
                             <div className='w-1 h-1 rounded-full bg-accent absolute -top-[1px]'></div>
                         </div>
+
+                        {/* 5 */}
                         <div className='w-auto h-auto flex flex-col gap-5 max-w-[150px]'>
-                            <p className='step font-bold text-4xl'>01</p>
+                            <p className='step font-bold text-4xl'>05</p>
                             <div className='flex flex-col gap-1'>
-                                <h4 className='font-mono text-2xl font-bold text-[#BA23D2] w-fit'>Assess</h4>
-                                <p className='font-sans text-base'>Understand your business, goals, and risks.</p>
+                                <h4 className='font-mono text-2xl font-bold text-[#BA23D2] w-fit'>Improve</h4>
+                                <p className='font-sans text-base'>Regularly review and enhance your security posture.</p>
                             </div>
                         </div>
                         <div className='w-[215px] relative h-auto rotate-90'>
