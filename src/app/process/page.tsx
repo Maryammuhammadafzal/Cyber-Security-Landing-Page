@@ -8,7 +8,7 @@ const ProcessPage = () => {
                     Our Process
                 </h2>
             </div>
-            <div className="w-full p-2  h-auto flex justify-center items-center md:gap-3 sm:gap-50 xs:gap-36 gap-24">
+            <div className="w-full p-2  h-auto flex justify-center items-center md:gap-3 gap-6">
                 <div className='w-full rounded-[20px] flex justify-center items-center h-auto min-h-[270px] bg-white border border-accent drop-shadow-lg drop-shadow-accent/70'>
                     <div className='w-full h-full lg:flex grid lg:px-3 p-6 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 justify-evenly items-center gap-3'>
                         {/* 1 */}
