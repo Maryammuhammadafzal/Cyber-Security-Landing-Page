@@ -41,8 +41,8 @@ useEffect(() => {
 
                 </div>
                 <div className='w-full h-auto flex flex-col gap-3 justify-center items-center'>
-                    <div data-aos={isMobile ? 'fade-up' : 'fade-right'} className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
-                        <div className='w-full md:col-span-2 col-span-1 h-[366px]'>
+                    <div className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
+                        <div data-aos={isMobile ? 'fade-up' : 'fade-right'} className='w-full md:col-span-2 col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon1.png'
@@ -59,7 +59,7 @@ useEffect(() => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full col-span-1 h-[366px]'>
+                        <div  data-aos={isMobile ? 'fade-up' : 'fade-left'} className='w-full col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon2.png'
@@ -77,8 +77,8 @@ useEffect(() => {
                             </div>
                         </div>
                     </div>
-                    <div className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
-                        <div className='w-full col-span-1 h-[366px]'>
+                    <div  className='grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3 w-full h-auto'>
+                        <div  data-aos={'fade-up'} className='w-full col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon3.png'
@@ -95,7 +95,7 @@ useEffect(() => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full col-span-1 h-[366px]'>
+                        <div  data-aos={'fade-up'} className='w-full col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon4.png'
@@ -112,7 +112,7 @@ useEffect(() => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full md:col-span-1 xs:col-span-2 col-span-1 h-[366px]'>
+                        <div  data-aos={'fade-up'} className='w-full md:col-span-1 xs:col-span-2 col-span-1 h-[366px]'>
                             <div className='w-full h-full border border-accent rounded-3xl lg:pt-8 pt-6 lg:px-6 px-4 flex flex-col gap-2'>
                                 <Image
                                     src='/images/service-icon5.png'
