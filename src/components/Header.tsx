@@ -96,8 +96,7 @@ const Header = () => {
                     {isMenuOpen ? (
                         <div
                             data-aos="fade-left"
-                            ref={menuRef}
-                            className="mobile-menu absolute -right-2 top-0 p-3 w-[280px] h-screen bg-white shadow-lg"
+                            className="mobile-menu absolute -right-2 z-50 top-0 p-3 w-[280px] h-screen bg-white shadow-lg"
                         >
                             <Toggle
                                 data-aos="fade-right"
@@ -128,12 +127,6 @@ const Header = () => {
                                         <Link href={'/contact'} className="text-xl">Contact Us</Link>
                                     </li>
                                 </ul>
-                                <Toggle
-                                    onClick={() => setIsMenuOpen((prev) => !prev)}
-                                    className="md:hidden flex text-2xl cursor-pointer"
-                                >
-                                    <AlignCenter size={64} className="w-[100px] " />
-                                </Toggle>
                             </nav>
                         </div>
                     ) : null}
