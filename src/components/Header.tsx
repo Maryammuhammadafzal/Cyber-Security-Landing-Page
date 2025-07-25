@@ -101,7 +101,7 @@ const Header = () => {
                             <Toggle
                                 data-aos="fade-right"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="md:hidden flex text-2xl cursor-pointer"
+                                className="md:hidden flex text-2xl cursor-pointer w-full flex justify-end"
                             >
                                 <X size={64} className="w-[130px] " />
                             </Toggle>
