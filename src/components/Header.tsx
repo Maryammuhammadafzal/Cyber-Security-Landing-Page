@@ -96,7 +96,7 @@ const Header = () => {
                     {isMenuOpen ? (
                         <div
                             data-aos="fade-left"
-                            className="mobile-menu absolute -right-2 z-50 top-0 p-3 w-[280px] h-screen bg-white shadow-lg"
+                            className="mobile-menu absolute -right-2 z-50 -top-3 p-3 w-[280px] h-screen bg-white shadow-lg"
                         >
                             <Toggle
                                 data-aos="fade-right"
@@ -107,7 +107,7 @@ const Header = () => {
                             </Toggle>
 
                             <nav className="w-auto h-auto px-2">
-                                <ul className="w-auto h-auto flex justify-center items-center gap-4">
+                                <ul className="w-auto h-auto flex flex-col justify-center items-center gap-4">
                                     <li className="flex justify-center items-center p-1">
                                         <Link href={'/'} className="text-xl">Home</Link>
                                     </li>
