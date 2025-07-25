@@ -85,7 +85,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <Toggle
-                            onClick={() => setIsMenuOpen((prev) => !prev)}
+                            onClick={() => setIsMenuOpen(true)}
                             className="md:hidden flex text-2xl cursor-pointer"
                         >
                             <AlignCenter size={64} className="w-[100px] " />
@@ -101,7 +101,7 @@ const Header = () => {
                         >
                             <Toggle
                                 data-aos="fade-right"
-                                onClick={() => setIsMenuOpen((prev) => !prev)}
+                                onClick={() => setIsMenuOpen(false)}
                                 className="md:hidden flex text-2xl cursor-pointer"
                             >
                                 <X size={64} className="w-[100px] " />
