@@ -103,11 +103,11 @@ const Header = () => {
                                 onClick={() => setIsMenuOpen(false)}
                                 className="md:hidden flex text-2xl cursor-pointer"
                             >
-                                <X size={64} className="w-[100px] " />
+                                <X size={64} className="w-[130px] " />
                             </Toggle>
 
-                            <nav className="w-auto h-auto px-2">
-                                <ul className="w-auto h-auto flex flex-col justify-center items-center gap-4">
+                            <nav className="w-auto h-auto p-2">
+                                <ul className="w-auto h-auto flex flex-col justify-center gap-4">
                                     <li className="flex justify-center items-center p-1">
                                         <Link href={'/'} className="text-xl">Home</Link>
                                     </li>
