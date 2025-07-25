@@ -106,7 +106,7 @@ const Header = () => {
                                 <X size={64} className="w-[130px] " />
                             </Toggle>
 
-                            <nav className="w-auto h-auto p-2">
+                            <nav className="w-full h-auto p-2">
                                 <ul className="w-auto h-auto flex flex-col gap-4">
                                     <li className="p-1">
                                         <Link href={'/'} className="text-xl">Home</Link>
