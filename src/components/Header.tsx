@@ -107,23 +107,23 @@ const Header = () => {
                             </Toggle>
 
                             <nav className="w-auto h-auto p-2">
-                                <ul className="w-auto h-auto flex flex-col justify-center gap-4">
-                                    <li className="flex justify-center items-center p-1">
+                                <ul className="w-auto h-auto flex flex-col gap-4">
+                                    <li className="p-1">
                                         <Link href={'/'} className="text-xl">Home</Link>
                                     </li>
-                                    <li className="flex justify-center items-center p-1">
+                                    <li className="p-1">
                                         <Link href={'/about'} className="text-xl">About</Link>
                                     </li>
-                                    <li className="flex justify-center items-center p-1">
+                                    <li className="p-1">
                                         <Link href={'/services'} className="text-xl">Services</Link>
                                     </li>
-                                    <li className="flex justify-center items-center p-1">
+                                    <li className="p-1">
                                         <Link href={'/process'} className="text-xl">Process</Link>
                                     </li>
-                                    <li className="flex justify-center items-center p-1">
+                                    <li className="p-1">
                                         <Link href={'/pricing'} className="text-xl">Pricing Plans</Link>
                                     </li>
-                                    <li className="flex justify-center items-center p-1">
+                                    <li className="p-1">
                                         <Link href={'/contact'} className="text-xl">Contact Us</Link>
                                     </li>
                                 </ul>
